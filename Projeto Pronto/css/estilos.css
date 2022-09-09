@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Poppins, monospace;
+}
+
+nav {
+    /*degrade:
+    background-image: linear-gradient(to bottom, #1C2B2D 95%, #1F6F8B );*/
+    background-color: #1C2B2D;
+}
+
+.container {
+    width: 1140px; 
+    max-width: 100%;
+    margin: auto;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+nav {
+    width: 100%;
+    float: left;
+}
+
+nav h1 img {
+    width: 100px;
+}
+
+h1 {
+    float: left;
+}
+
+ul {
+    float: right;
+}
+
+nav ul li {
+    display: inline;
+    list-style: none;
+    padding-right: 20px;
+    padding: 35px 15px;
+    float: left;
+}
+ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+ul li a {
+    background-color: brown;/* COR DE FUNDO PARA OS LINKS */
+    color: white;/* COR DA FONTE PARA OS LINKS */
+    padding: 6px 26px;
+    border: 4px solid transparent;
+}
+
+ul li a:hover {
+    background-color: pink;
+    color: darkblue;
+    border: 4px solid purple;
+    box-shadow: 0px 0px 23px -2px #53ac59;
+}
+
+header {
+    background-color: #1F6F8B;
+}
+
+header img {
+    width: 100%;
+    border: 4px solid white;
+    object-fit: cover;
+    object-position: center;
+    height: 300px;
+}
+
+header#header-contato img {
+    object-position: center;
+}
+
+.clearfix {
+    overflow: auto;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+[class*="col"] {
+    float: left;
+    padding: 5px;
+}
+
+main img {
+    width: 100%;
+    max-height: 250px;
+    border-radius: 4px;
+    border: 2px, solid #0000;
+}
+
+main {
+    background-color: #99A8B2;
+}
+
+.center {
+    text-align: center;
+}
+
+footer {
+    background-color: #E6D5B8;
+    color: black;
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/*Estilos para o Formulário */
+
+input[type="text"],
+input[type="email"],
+textarea, select {
+    width: 100%;
+    padding: 4px;
+    border: 2px, solid #0000;
+    border-radius: 4px;
+    margin: 4px 0;
+    resize: none;
+    outline: none;
+    background-color: white;
+}
+
+input[type="text"]:focus, 
+input[type="email"]:focus, 
+textarea:focus {
+    background-color: #99A8B2;
+}
+
+/*config dos botões */
+main div .botao1, .botao2, .botao3, .botao4, .botao5, .botao6, .botao7, .botao8{
+    margin-left: 35px;
+    padding: 15px;
+    border-radius: 22px;
+    background-image: linear-gradient(to right, #42C2FF, #B8FFF9 );
+    border: 0;
+    box-shadow: 0px 0px 23px -2px #B8FFF9;
+
+}
+.botao1 a, .botao2 a, .botao3 a, .botao4 a, .botao5 a,  .botao6 a, .botao7 a, .botao8  a{
+    text-decoration: none;
+    color: black;
+}
+.comprar{
+    background-color: #53ac59;
+    padding: 10px;
+    border-radius: 20px;
+    margin-left: 40%;
+    border: 0;
+    box-shadow: 0px 0px 23px -2px #53ac59;
+}
+
+.comprar:hover{
+    transition: 1s;
+    background-color: #990100;
+    box-shadow: 0px 0px 23px -2px #990100;
+    color: #c1e0e0;
+
+}
+
+header img.produto_img{
+    width: 100%;
+    height: auto;
+    object-position: unset;
+    border: outset;
+    padding: 4px;
+}
+
+header .informaçao{
+    text-align: left;
+    padding: 30px;
+}
+
+header .preco{
+    margin-left: 43%;
+    padding-top: 5px;
+    
+}
+
